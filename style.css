@@ -5,6 +5,8 @@ body{
 .sidebar {
   height: 100%;
   width: 9%;
+  min-width: 110px;
+  max-width: 10px;
   position: fixed;
   top: 0; /* Stay at the top */
   left: 0;
@@ -23,7 +25,7 @@ body{
 }
 
 .maincontainer {
-  padding-left: 180px;
+  /*padding-left: 180px;*/
   padding-top: 120px;
   width: 100vw;
   height: 100vh;  
@@ -44,14 +46,14 @@ body{
 }
 
 .box-calendario {
-  width: 1470px;
-  height: 470px;
-  padding-top: 60px;
-  border-radius: 40px;
+  width: 100%;
+  height: 620px;
+  max-width: 1920px;
+  padding-left: 150px;
   justify-content: center;
   display: flex;  
   align-items: center;
-  text-align: justify;
+  text-align: center;
   font-family: cursive;
 }
 
@@ -71,7 +73,7 @@ body{
 }
 
 .gallery{
-  padding-left: 170px;
+  padding-left: 110px;
   line-height:0;
   -webkit-column-count:5; 
   -webkit-column-gap:5px; 
