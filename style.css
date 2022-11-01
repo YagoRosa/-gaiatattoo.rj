@@ -1,63 +1,68 @@
-body{
-    overflow: hidden;
-  /*background-color: #f4f6f8;*/
+body {
+  background-color: #fff;
 }
-.sidebar {
-  height: 100%;
-  width: 9%;
-  min-width: 110px;
-  max-width: 10px;
-  position: fixed;
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #f7eaa2;
-  padding-top: 300px;
-  text-align: center;
+p {
+  margin: 0;
+}
+p.nome {
+  font-size: 18px;
+}
+p.proficao {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
 }
 
-.sidebar a {
-  padding: 20px 20px 20px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: rgb(51, 51, 51);
-  display: block;
-  font-family: sans-serif;
+.top-container {
+  background-color: rgb(128, 120, 120);
+  width: 100%;
+  height: 100px;
+}
+.main-container {
+  width: 100%;
+  height: auto;
+  background-color: #333;
+  justify-content: center;
 }
 
-.maincontainer {
-  /*padding-left: 180px;*/
-  padding-top: 120px;
-  width: 100vw;
-  height: 100vh;  
-  display: flex;   
-  text-align: center;
+.bottom-container {
+  background-color: rgb(161, 142, 142);
+  width: 100%;
+  height: 200px;
+}
+
+.box-perfil {
+  display: flex;
+  width: 100px;
+  height: 60px;
+  margin: 10px;
+  background-color: rgb(74, 83, 80);
+  float: right;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
 }
 
 .box-cuidados {
-  width: 1630px;
-  height: 620px;
-  border-radius: 40px;
-  justify-content: center;
-  display: flex;  
-  align-items: center;
-  text-align: justify; 
+  display: flex;
+  padding: 20px;
   font-family: cursive;
- /*background-color: #f4f6f8;*/
+  text-align: justify;
 }
 
 .box-calendario {
   width: 100%;
   height: 620px;
   max-width: 1920px;
-  padding-left: 150px;
+  padding-left: 5px;
   justify-content: center;
-  display: flex;  
+  display: flex;
   align-items: center;
   text-align: center;
   font-family: cursive;
 }
 
-.redes{
+.redes {
   padding-bottom: 0px;
   padding-left: 50px;
   width: 100px;
@@ -67,33 +72,131 @@ body{
   text-align: center;
 }
 
-.redes a{
+.redes a {
   text-decoration: none;
   -webkit-text-fill-color: black;
 }
 
-.gallery{
-  padding-left: 110px;
-  line-height:0;
-  -webkit-column-count:5; 
-  -webkit-column-gap:5px; 
-  -moz-column-count:5;
-  -moz-column-gap:5px;
-  column-count:5;
-  column-gap:5px;
+.gallery {
+  padding-top: 50px;
+  line-height: 0;
+  -webkit-column-count: 5;
+  -webkit-column-gap: 5px;
+  -moz-column-count: 5;
+  -moz-column-gap: 5px;
+  column-count: 5;
+  column-gap: 1px;
 }
 
 .gallery img {
   width: 100% !important;
   height: auto !important;
-  margin-bottom:5px;
+  margin-bottom: 1px;
 }
 
 @media (max-width: 1200px) {
   .gallery {
-   -moz-column-count:    4;
-   -webkit-column-count: 4;
-   column-count:         4;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
   }
 }
 
+.box-item{
+  display: block;
+  width: 100%;
+  height: 700px;
+  padding-top: 50px;
+  justify-content: center;
+  align-items: center;  
+}
+
+.menu-perfil {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: antiquewhite;
+  align-items: center;
+}
+
+.menu-perfil img {
+  display: block;
+  
+  margin: 22px;
+  border-radius: 50%;
+  
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+  display: none;
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+  display: none;
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+  display: none;
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 40px;
+  left: 10px;
+  width: 26px;
+  height: 46px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition-duration: 0.25s;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+.menu__box {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  list-style: none;
+  background-color: #eceff1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
+}
+.menu__item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+  padding-left: 85px;
+}
+.menu__item:hover {
+  background-color: #c1cfd4;
+}
