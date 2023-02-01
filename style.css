@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-font: "Cormorant Garamond";
+    --secondary-font: "Pinyon Script";
+
+    --primary-color: #898989;
+    --secondary-color: #D9D9D9;
+}
+
+body {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 835px;
+}
+
+.top > p {
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+.top > .subtitle {
+    font-family:var(--secondary-font);
+    color: var(--secondary-color);
+    text-transform: none;
+    font-size: 42px;
+    line-height: 12px;
+}
+
+.description{
+    text-align: center;
+    width: 835px;
+    text-transform: uppercase;
+    margin-top: 32px;
+}
+
+.description > p + p {
+    margin-top: 16px;
+}
+
+.trial {
+    margin-top: 32px;
+}
+
+.trial > p { 
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    
+}
+
+.trial-description {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    gap:185px;
+   
+}
+
+.card-description{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    color: #000;
+    font-size: 18px;
+    
+}
+
+.card-description > small {
+    font-family: "Satisfy";
+}
+
+.under-trial{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 105px;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    width: 710px;
+    height: 5px;
+    background-color: #898989;
+    justify-content: center;
+}
+
+.circle1, .circle2, .circle3, .circle4 , .circle5  {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #898989;
+    position: absolute;
+}
+
+.circle1 {
+    margin-right:720px ;
+}
+
+.circle2  {
+   margin-right: 360px;
+}
+
+
+.circle4 {
+    margin-left: 360px;
+}
+
+.circle5 {
+    margin-left: 720px;
+}
+
+.call-to-action{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    
+    font-size: 18px;;
+    font-family: var(--primary-font);
+    
+    border-style: none;
+    border-radius: 10px;
+    
+    background: rgba(193, 193, 193, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.differentials {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.differentials > p {
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.cards-content {
+    
+    display: flex;
+ 
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;   
+}
+
+.differentials-card {
+
+    color: #000;
+    font-size: 18px;
+    text-align: center; 
+    width: 305px;
+    margin-inline: 200px;  
+}
+
+.differentials-card > p {
+    font-size: 24px;
+    
+}
+
+.differentials-card > small {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.last-work {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.last-work > p {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-inline: 50px;
+    width: 300px;
+   
+}
+
+.last-work > img {
+    width: 150px;
+    height: 240px;
+    margin: 10px;
+}
+
+.end {
+    text-align: center;
+    width: 700px;
+}
+
+.end > h1 {
+    margin-top: 40px;
+}
+
+.end > p {
+    margin-top: 20px;
+}
+
+.end > p, h1 { 
+    text-transform: uppercase;
+}
+
+.end > small {
+    padding-bottom: 50px;
+}
+
+[class*="col-"] {
+    width: 70%;
+  }
