@@ -5,8 +5,8 @@
 }
 
 :root {
-    --primary-font: "Cormorant Garamond";
-    --secondary-font: "Satisfy";
+    --primary-font: "Montserrat";
+    --secondary-font: "Montserrat";
 
     --primary-color: #898989;
     --secondary-color: #D9D9D9;
@@ -197,6 +197,7 @@ html, body, section {
   }
 .frist-section > h1{
     font-size: 42px;
+    font-weight: 400;
 }
 
 .scrool {
@@ -219,7 +220,7 @@ html, body, section {
     margin-right: 30px;
 }
     .content-side-right > p{       
-        text-transform: uppercase;
+    
         writing-mode: tb;
         position: absolute;
         bottom: 0;
@@ -250,13 +251,13 @@ html, body, section {
     .content-side-left > .scrool > p {
     margin-top: 680px;
     margin-bottom: 15px;
-    text-transform: uppercase;
     writing-mode: tb;
     }
 
     .content-side-left > h1 {
     margin-top: 60px;
     font-size: 2.2rem;
+    font-weight: 400;
     }
 
 .second-menu {
@@ -568,7 +569,7 @@ html, body, section {
 
     .content-container-sobre > p {
         font-size: 20px;
-        width: 280px;
+        width: 335px;
     }
     .content-container-sobre > h2 {
         margin-bottom: 0px;
@@ -599,9 +600,10 @@ html, body, section {
     }
 
     .top-content-contato > h2 {
-        font-size: 20px;
+        font-size: 18px;
         width: 330px;
         margin-bottom: 10px;
+        font-weight: normal;
     }
 
     .midle-content-contato {
@@ -612,13 +614,14 @@ html, body, section {
     }
 
     .card-description-contato > p {
-        width: 300px;
-        font-size: 18px;
+        width: 310px;
+        font-size: 14px;
     }
     .bottom-content-contato > p {
         text-align: center;
         width: 290px;
         margin-top: 30px;
+        font-size: 14px;
     
     }
     .bottom-content-contato {        
@@ -739,7 +742,7 @@ html, body, section {
 
     .content-container-sobre > p {
         font-size: 20px;
-        width: 280px;
+        width: 335px;
     }
     .content-container-sobre > h2 {
         margin-bottom: 0px;
@@ -748,7 +751,7 @@ html, body, section {
     .sobre-diferenciais > p {
         width: 250px;
         margin-bottom: 10px;
-        font-size: 14px;
+        font-size: 12px;
         
     }
 
@@ -770,9 +773,10 @@ html, body, section {
     }
 
     .top-content-contato > h2 {
-        font-size: 20px;
+        font-size: 18px;
         width: 330px;
         margin-bottom: 10px;
+        font-weight: normal;
     }
 
     .midle-content-contato {
@@ -783,13 +787,14 @@ html, body, section {
     }
 
     .card-description-contato > p {
-        width: 300px;
-        font-size: 18px;
+        width: 310px;
+        font-size: 14px;
     }
     .bottom-content-contato > p {
         text-align: center;
         width: 290px;
         margin-top: 30px;
+        font-size: 14px
     
     }
     .bottom-content-contato {        
