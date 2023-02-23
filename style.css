@@ -58,7 +58,7 @@ p,h1,h2,small,a {
 
     .content-container-sobre > p {
     font-size: 20px;
-    width: 225px;
+    width: 250px;
     color: white;
 
     }
@@ -329,6 +329,7 @@ html, body, section {
     .caixa3 > a {
         text-transform: uppercase;
         color: #FFF;
+        text-decoration: none;
         
     }
     
@@ -383,7 +384,7 @@ html, body, section {
 
 .card-description > p {
     font-size: 20px;
-    width: 400px;
+   
 }
 
 .card-description > h2 {
