@@ -1112,6 +1112,7 @@ section:nth-of-type(odd) {
     .promocao-action-area {
         margin-left: 0px;
         margin-top: 25px;
+        align-items: center;
     }
 
     .promocao-action-area > img {
