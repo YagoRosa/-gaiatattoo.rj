@@ -482,11 +482,6 @@ section:nth-of-type(odd) {
     text-transform: uppercase;
 }
 
-.card>img {
-    width: 130px;
-    height: 190px;
-}
-
 .card-description {
     display: flex;
     flex-direction: column;
@@ -499,6 +494,7 @@ section:nth-of-type(odd) {
     font-size: 20px;
     color: var(--primary-color);
     margin-top: 5px;
+    font-weight: bolder;
 }
 
 .card-description>h2 {
@@ -541,9 +537,17 @@ section:nth-of-type(odd) {
     font-size: 16px;
 }
 
+.title-promocao > img {
+    position: absolute;
+    margin-left: 250px;
+    margin-top: -110px;
+}
+
 .main-title-container {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
 }
 
 .promocao-action-area {
@@ -601,6 +605,7 @@ section:nth-of-type(odd) {
         width: 350px;
         height: 350px;
         margin-bottom: 40px;
+        
     }
 
     .content-container-sobre {
@@ -738,7 +743,8 @@ section:nth-of-type(odd) {
     }
 
     .especialidade {
-        gap: 30px;
+        gap: 10px;
+        text-align: center;
     }
 
     .card>img {
@@ -931,11 +937,12 @@ section:nth-of-type(odd) {
 
     .card-description>p {
         font-size: 16px;
-        width: 290px;
+        width: 331px;
     }
 
     .especialidade {
-        gap: 30px;
+        gap: 10px;
+        text-align: center;
     }
 
     .card>img {
@@ -1021,9 +1028,7 @@ section:nth-of-type(odd) {
     .content-side-right > p {
         font-size: 16px;
     }
-    .bottom-decoration > img {
-        width: 306px;
-    }
+
     .action-button { 
         margin-right: 0px;
     }
@@ -1038,9 +1043,94 @@ section:nth-of-type(odd) {
         width: 270px;
         height: 300px;
         margin-left: 20px;
+        
     }
-    .top-decoration > img {
-        width: 100px;
+
+    .main-container-contato > img {
+        margin-bottom: 500px;
+        position: absolute;
+        margin-right: 160px;
+        width: 55px;
     }
-    
+
+    .title-especiliades {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .especialidades-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-especialidade {
+        position: absolute;
+        margin-left: 0px;
+        margin-top: 35px;
+    }
+
+    .img-especialidade > img {
+        width: 390px;
+        opacity: 0.15;
+    }
+    .title-especiliades-decoration {
+        height: 100vh;
+    }
+    .title-especiliades-decoration > img {
+        position: absolute;
+        left: 0;
+        width: 60px;
+        margin-left: 15px;
+        margin-top: 60px;
+    }
+
+    .card-description {
+        align-items: center;
+    }
+
+
+    .bottom-button > img {
+        position: absolute;
+        margin-right: 169px;
+        height: 40px;
+    }
+    .bottom-button > a > button {
+        width: 205px;
+        height: 31px;
+        font-size: 11px;
+        margin-left: 15px;
+    }
+    .title-promocao {
+        align-items: center;
+    }
+
+    .main-title-container {
+        flex-direction: column;
+    }
+
+    .promocao-action-area {
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+
+    .promocao-action-area > img {
+        display: none;
+    }
+    .main-title-container {
+        align-items: center;
+    }
+
+    .line2{
+        width: 343px;
+    }
+
+    .title-promocao > img {
+        position: absolute;
+        margin-left: 230px;
+        margin-top: -70px;
+        width: 75px;
+    }
+
+   
 }
