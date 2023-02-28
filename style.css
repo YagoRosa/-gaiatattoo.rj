@@ -20,6 +20,9 @@ p,h1,h2,small,a,h3 {
 
 .main-container-contato > img {
     margin-bottom: 550px;
+    left: 0;
+    position: absolute;
+    margin-left: 405px;
 }
 
 .capa-titulo {
@@ -568,214 +571,9 @@ section:nth-of-type(odd) {
     display: flex;
 }
 
-@media (max-width: 400px)
-
-/* IPHONE 12 PRO, PIXEL 5*/
-    {
-    .content-side-left>p {
-        margin-top: 600px;
-
-    }
-
-    .frist-section>h1 {
-        font-size: 30px;
-    }
-
-    .content-side-left>h1 {
-        margin-top: 30px;
-    }
-
-    .social-media-area {
-        margin-top: 22px;
-    }
-
-    .content-side-right {
-        margin-right: 15px;
-    }
-
-    .content-side-left {
-        margin-left: 15px;
-    }
-
-    .main-container-sobre {
-        flex-direction: column;
-    }
-
-    .main-container-sobre>img {
-        width: 350px;
-        height: 350px;
-        margin-bottom: 40px;
-        
-    }
-
-    .content-container-sobre {
-        margin-top: 0px;
-        align-items: center;
-        text-align: center;
-        height: 85px;
-        margin-bottom: 10px;
-    }
-
-    .caixa3 {
-        display: none;
-        margin-left: 15px;
-        font-size: 12px;
-    }
-
-    .caixa3>h1 {
-        font-size: 24px;
-    }
-
-    .content-container-sobre>h1 {
-        font-size: 26px;
-        margin-bottom: 0px;
-        width: 330px;
-    }
-
-    .content-container-sobre>p {
-        font-size: 20px;
-        width: 335px;
-    }
-
-    .content-container-sobre>h2 {
-        margin-bottom: 0px;
-    }
-
-    .sobre-diferenciais>p {
-        width: 250px;
-        margin-bottom: 10px;
-        font-size: 14px;
-
-    }
-
-    .sobre-diferenciais {
-        height: 230px;
-        width: 460px;
-        align-items: baseline;
-        text-align: initial;
-    }
-
-    .sobre-diferenciais>h2 {
-        margin-bottom: 5px;
-        font-size: 20px;
-    }
-
-    .top-content-contato {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
-    .top-content-contato>h2 {
-        font-size: 18px;
-        width: 330px;
-        margin-bottom: 10px;
-        font-weight: normal;
-    }
-
-    .midle-content-contato {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .card-description-contato>p {
-        width: 310px;
-        font-size: 14px;
-    }
-
-    .bottom-content-contato>p {
-        text-align: center;
-        width: 290px;
-        margin-top: 30px;
-        font-size: 14px;
-
-    }
-
-    .bottom-content-contato {
-        margin-top: 10px;
-    }
-
-    .card-description-contato+.card-description-contato {
-        margin-bottom: 0px;
-    }
-
-    .card-description-contato {
-        display: flex;
-        width: 350px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .top-content-contato {
-        margin-bottom: 0px
-    }
-
-    .top-content-contato>h1 {
-        font-size: 24px;
-        margin-bottom: 15px;
-    }
-
-    .line1 {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .title-especiliades>h1 {
-        font-size: 24px;
-        margin-bottom: 50px;
-    }
-
-    .card-description {
-        width: auto;
-    }
-
-    .card-description>h2 {
-        font-size: 20px;
-        margin-bottom: 5px;
-    }
-
-    .card-description>p {
-        font-size: 16px;
-        width: 290px;
-    }
-
-    .especialidade {
-        gap: 10px;
-        text-align: center;
-    }
-
-    .card>img {
-        display: none;
-    }
-
-    .title-promocao>p {
-        width: 300px;
-        text-align: center;
-        font-size: 16px;
-        margin-bottom: 30px;
-    }
-
-    .title-promocao>h2>small {
-        display: none;
-        margin-left: 0px;
-    }
-
-    .title-promocao>h2 {
-        font-size: 20px;
-    }
-
-    .title-promocao>h1 {
-        font-size: 24px;
-    }
-}
-
 @media (max-width: 430px) {
     .content-side-left>p {
         margin-top: 600px;
-
     }
 
     .frist-section>h1 {
@@ -829,6 +627,7 @@ section:nth-of-type(odd) {
     .content-container-sobre>h1 {
         font-size: 26px;
         margin-bottom: 0px;
+        width: 330px;
     }
 
     .content-container-sobre>p {
@@ -848,7 +647,7 @@ section:nth-of-type(odd) {
     }
 
     .sobre-diferenciais {
-        height: 230px;
+        height: 200px;
         width: 250px;
         align-items: baseline;
         text-align: initial;
@@ -858,7 +657,10 @@ section:nth-of-type(odd) {
         margin-bottom: 5px;
         font-size: 20px;
     }
-
+    .card-description-contato>h2 {
+        font-size: 20px;
+        margin-top: 5px;
+    }
     .top-content-contato {
         display: flex;
         flex-direction: column;
@@ -969,36 +771,6 @@ section:nth-of-type(odd) {
         font-size: 24px;
     }
 }
-
-@media (max-width: 375px) and (max-height: 667px) {
-    .main-container-sobre>img {
-        width: 250px;
-        height: 255px;
-        margin-bottom: 15px;
-    }
-
-    .top-content-contato>h1 {
-        font-size: 24px;
-        margin-bottom: 0px;
-        margin-top: 15px;
-    }
-
-    .content-container-sobre {
-        margin-top: 35px;
-    }
-
-    .line1 {
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    .bottom-content-contato>p {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-}
-
-
 @media (max-width: 430px) {
     .logo > img {
         height: 100px;
@@ -1047,10 +819,9 @@ section:nth-of-type(odd) {
     }
 
     .main-container-contato > img {
-        margin-bottom: 500px;
-        position: absolute;
-        margin-right: 160px;
+        margin-bottom: 520px;        
         width: 55px;
+        margin-left: 85px;
     }
 
     .title-especiliades {
@@ -1071,7 +842,7 @@ section:nth-of-type(odd) {
     }
 
     .img-especialidade > img {
-        width: 390px;
+        width: 340px;
         opacity: 0.15;
     }
     .title-especiliades-decoration {
@@ -1132,6 +903,179 @@ section:nth-of-type(odd) {
         margin-top: -70px;
         width: 75px;
     }
-
    
+}
+@media (max-width: 360px) {
+    .capa-titulo > img {
+        width: 110px;
+    }
+
+    .content-container-sobre>h1 {
+        font-size: 24px;
+        margin-top: 5px;
+    }
+
+    .content-container-sobre>h2 {
+        font-size: 26px;
+    }
+
+    .content-container-sobre>p {
+        font-size: 16px;
+    }
+
+    .action-button > a > button {
+        margin-top: 8px;
+        height: 28px;
+    }
+    .main-container-sobre > img {
+        margin-top: 50px;
+    }
+    .sobre-diferenciais>h2 {
+        font-size: 16px;
+    }
+
+    .title-promocao > img {
+        margin-top: -55px;
+    }
+    .card-description-contato>h2 {
+        font-size: 16px;
+    }
+    .top-content-contato>h2 {
+        font-size: 16px;
+    }
+    .top-content-contato>h1 {
+        margin-bottom: 5px;
+    }
+    .main-container-contato > img {
+        margin-bottom: 420px;
+        margin-left: 85px;
+        width: 45px;
+    }
+    .card-description-contato>p {
+        margin-top: 5px;
+    }
+    .card-description>p {
+        font-size: 14px;
+    }
+    .card-description {
+        margin-bottom: 5px;
+    }
+
+    .title-especiliades>h1 {
+        margin-bottom: 20px;
+    }
+    .title-especiliades-decoration > img {
+        margin-top: 85px;
+    }
+
+    .line2 {
+        width: 300px;
+    }
+    .promocao-action-area > p {
+        font-size: 14px;
+    }
+    .title-promocao>h1{
+        margin-bottom: 20px;
+    }
+    .title-promocao>p {
+        margin-bottom: 20px;
+    }
+    .promocao-action-area {
+        margin-top: 20px
+    }
+
+
+}
+
+@media (max-width: 375px) and (max-height: 667px){
+
+    .capa-titulo > img {
+        width: 115px;
+    }
+    .content-container-sobre {
+        margin-bottom: 5px;
+    }
+    .content-container-sobre>p {
+        font-size: 14px;
+        width: 250px;
+    }
+    .content-container-sobre>h1 {
+        font-size: 20px;
+    }
+    .content-container-sobre>h2 {
+        font-size: 22px
+    }
+    .main-container-sobre > img {
+        margin-top: 40px;
+        width: 205px;
+        height: 230px;
+    }
+    .sobre-diferenciais>h2 {
+        font-size: 16px;
+    }
+    .action-button > a > button {
+        margin-top: 7px;
+        height: 25px;
+        width: 193px;
+        font-size: 12px;
+    }
+    .sobre-diferenciais>p {
+        margin-bottom: 5px;
+    }
+    .sobre-diferenciais {
+        height: 200px;
+    }
+    .top-content-contato>h2 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .card-description-contato>h2 {
+        font-size: 16px;
+    }
+    .card-description-contato>p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .card-description-contato+.card-description-contato {
+        margin-bottom: 0px;
+    }
+    .main-container-contato > img {
+        margin-bottom: 395px;
+        margin-left: 80px;
+    }
+    .top-content-contato>h1 {
+        margin-bottom: 5px;
+    }
+    .title-especiliades-decoration > img{
+        margin-top: 95px;
+    }
+    .title-especiliades>h1{
+        margin-bottom: 15px
+    }
+    .card-description>p{
+        font-size: 12px;
+    }
+    .card-description {
+        margin-bottom: 5px;
+    }
+    .img-especialidade > img {
+        width: 250px;
+    }
+    .card-description>h2 {
+        margin-bottom: 0px;
+    }
+    .title-promocao>h1 {
+        margin-bottom: 20px;
+    }
+    .title-promocao>p{
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+    .promocao-action-area>p{
+        font-size: 14px;
+    }
+    .line2 {
+        width: 300px;
+    }
+    
 }
